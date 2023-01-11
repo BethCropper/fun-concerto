@@ -49,7 +49,15 @@ public class MoveTree {
         Board newState = new Board(state, position, newCounter);
         MoveTree newNode = new MoveTree(counter.getOther(), depth + 1, newState, position);
     }
+    public void removeNode(List<Integer> moveListToGetToNode){
+        System.out.println('sjhviw');
+    }
+    public List<MoveTree> getLeaves(){
+        List<MoveTree> leafList = new ArrayList<>();
+        return leafList;
+    }
+    public List<MoveTree> getChildren(){
+        return moveList;
+    }
 
-    public List<MoveTree> getLeaves(){}
-    public List<MoveTree> getChildren(){}
 }
